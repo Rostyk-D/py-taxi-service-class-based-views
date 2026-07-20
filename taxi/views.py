@@ -30,6 +30,8 @@ class CarListView(generic.ListView):
         .prefetch_related("drivers")
         .order_by("model")
     )
+    paginate_by = 5
+
 
 
 class CarDetailView(generic.DetailView):
