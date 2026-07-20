@@ -33,7 +33,6 @@ class CarListView(generic.ListView):
     paginate_by = 5
 
 
-
 class CarDetailView(generic.DetailView):
     model = Car
 
